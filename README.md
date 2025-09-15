@@ -1,4 +1,4 @@
-# Roshita Ailawadi – Netflix-Style Portfolio Website  
+# Roshita Ailawadi –  Portfolio Website  
 
 This is my personal portfolio website designed  using **HTML, CSS, and JavaScript**.  
 It showcases my skills, projects, and contact information in an interactive and visually appealing way.  
