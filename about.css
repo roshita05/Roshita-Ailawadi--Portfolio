@@ -1,0 +1,291 @@
+/* GENERAL PAGE STYLE */
+body {
+  background-color: #141414;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #141414; /* same as your site background */
+}
+
+
+.logo-img {
+  height: 45px;
+  width: auto;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  transition: color .3s;
+  
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e50914;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* ensures video fills the area */
+  z-index: 0;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* LETTER BY LETTER ANIMATION */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.hero-title::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.8s infinite;
+  color: #e50914;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* HERO BUTTONS */
+.btn-netflix {
+  background-color: #d60a14;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 4px;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+.btn-netflix:hover {
+  background-color: #f40612;
+  transform: scale(1.05);
+}
+
+/* PROJECTS SECTION */
+
+
+.projects-main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff; /* or your theme color */
+  margin-bottom: 10px;
+  margin-top: 80px; /* space from previous section */
+  font-weight: bold;
+}
+
+.projects-divider {
+  width: 100px;
+  height: 3px;
+  background: #e50914;
+  border: none;
+  margin: 0 auto 40px;
+}
+
+
+/* To fix sticky header overlapping when scrolling to anchor */
+#projects {
+  scroll-margin-top: 80px; /* adjust to your header height */
+}
+.category-title {
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 40px 0 15px 10px;
+}
+.project-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+.project-row::-webkit-scrollbar {
+  height: 8px;
+}
+.project-row::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 4px;
+}
+
+/* Individual cards */
+.project-card {
+  flex: 0 0 230px; /* width of each card */
+  background-color: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.project-card:hover img {
+  transform: scale(1.1);
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.project-title {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 180px;
+  }
+  .project-card img {
+    height: 120px;
+  }
+  .project-title {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* FOOTER */
+.site-footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.site-footer a {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #f40612;
+}
+
+.site-footer .footer-note {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 14px;
+  }
+  .site-footer h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .swiper-slide {
+    width: 150px;
+  }
+}
+/* Tablet view adjustments */
+@media (max-width: 992px) {
+  .hero {
+    height: 80vh; /* reduce height on tablets */
+  }
+  
+  .hero-content {
+    font-size: 2rem;
+}
+}
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* smaller hero section */
+  }
+ 
+  
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .hero {
+    
+    height: 60vh; /* very small hero */
+  }
+  
+  
+  
+}
+

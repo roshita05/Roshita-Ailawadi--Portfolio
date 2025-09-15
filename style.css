@@ -1,0 +1,92 @@
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  transition: color .3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e50914;
+}
+.logo-img {
+  height: 45px;
+  width: auto;
+}
+
+/* Footer */
+/* FOOTER */
+.site-footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.site-footer a {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #f40612;
+}
+
+.site-footer .footer-note {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 14px;
+  }
+  .site-footer h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Netflix button */
+.btn-netflix {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-netflix:hover {
+  background-color: #f40612;
+  transform: scale(1.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}

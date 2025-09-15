@@ -1,0 +1,15 @@
+page 1- form in which I need input from the user- name and their profession 
+page 2(about)- a video/photo background banner with my introduction and 2 buttons, one for resume and one for linkedIn
+Under the banner, provide a heading for projects and, below that, a carousel showcasing my various projects. I need 2-3 such carousels for different types of projects, for eg. frontend projects, ML projects, etc. 
+page 3- skills --- as shown in the image attached
+Programming languages: Python, Java, SQL, R, JavaScript, C.
+Web technologies: HTML, CSS, PHP, Bootstrap, WordPress, NodeJS, ReactJS, Streamlit.
+Development: Machine Learning, Kaggle, Postman
+Tools/Frameworks: Pandas, NumPy, MySQL,Django XAMPP, Hadoop (basic), Tableau, Talend,
+Power BI, Optuna, Photoshop, LaTeX
+Miscellaneous: Linux, MySQL, DBMS, MongoDB, social media marketing, digital marketing, brand
+management, Google Colab, Google Workspace, Canva, e-commerce, Excel.
+Soft skills: Communication, Leadership, Problem-Solving, and Teamwork.
+
+add contact me in the footer on every page- my phone no, mail, GitHub everything with icon
+the navigation bar menu should have About(move to page 2), Projects(scroll down to projects), Skills(move to page 3), Contact(scroll to footer)
