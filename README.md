@@ -4,7 +4,7 @@ This is my personal portfolio website designed  using **HTML, CSS, and JavaScrip
 It showcases my skills, projects, and contact information in an interactive and visually appealing way.  
 
 ## 🚀 Live Demo  
-[View Portfolio](https://yourusername.github.io/portfolio/)  
+[View Portfolio](https://roshita05.github.io/portfolio/)  
 
 ## 📝 Features  
 - **Landing Page / Form** – collects visitor details.  
