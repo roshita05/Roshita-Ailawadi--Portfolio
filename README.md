@@ -4,7 +4,8 @@ This is my personal portfolio website designed  using **HTML, CSS, and JavaScrip
 It showcases my skills, projects, and contact information in an interactive and visually appealing way.  
 
 ## 🚀 Live Demo  
-[View Portfolio]([https://roshita-chi.vercel.app/])  
+View (https://roshita-chi.vercel.app/) 
+
 
 ## 📝 Features  
 - **Landing Page / Form** – collects visitor details.  
